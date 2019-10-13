@@ -71,7 +71,7 @@ def apply_signature(config_args, fmt, js):
             # the whole signature descrambling entirely.
             logger.debug('signature found, skip decipher')
             continue
-
+            
         if js is not None:
             signature = cipher.get_signature(js, stream['s'])
         else:
